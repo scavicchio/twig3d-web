@@ -37,6 +37,7 @@ function Viewport3D() {
       <pointLight position={[-10, -10, -10]} />
       <Box position={[-1.2, 0, 0]} />
       <Box position={[1.2, 0, 0]} />
+    <color attach="background" args={['#f5f5f5']} />
     </Canvas>
   );
 }

@@ -11,8 +11,9 @@ function App() {
     <TreeViewComponent />, // render the TreeViewComponent
     React.createElement(
       'div',
-      { className: 'App', style: { flex: 5 } },
-      React.createElement(
+      {style: { height: '100vh', flex: 3 } },
+      <Viewport3D/>,
+      /*React.createElement(
         'header',
         { className: 'App-header' },
         React.createElement('img', { src: logo, className: 'App-logo', alt: 'logo' }),
@@ -27,10 +28,9 @@ function App() {
           'a',
           { className: 'App-link', href: 'https://reactjs.org', target: '_blank', rel: 'noopener noreferrer' },
           'Learn React'
-        )
+        )*/
       )
-    )
-  );
+    );
 }
 
 
