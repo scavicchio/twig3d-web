@@ -3,34 +3,17 @@ import './App.css';
 import React from 'react';
 import TreeViewComponent from './components/treeViewComponent';
 import Viewport3D from './components/Viewport3D';
+import Upload from './components/UploadButton';
+import Download from './components/DownloadButton'; 
 
 function App() {
   return React.createElement(
-    'div', // parent container
-    {style: { display: 'flex' }}, // apply flex display to outer container 
-    <TreeViewComponent />, // render the TreeViewComponent
-    React.createElement(
       'div',
       {style: { height: '100vh', flex: 3 } },
       <Viewport3D/>,
-      /*React.createElement(
-        'header',
-        { className: 'App-header' },
-        React.createElement('img', { src: logo, className: 'App-logo', alt: 'logo' }),
-        React.createElement(
-          'p',
-          null,
-          'Edit ',
-          React.createElement('code', null, 'src/App.js'),
-          ' and save to reload.'
-        ),
-        React.createElement(
-          'a',
-          { className: 'App-link', href: 'https://reactjs.org', target: '_blank', rel: 'noopener noreferrer' },
-          'Learn React'
-        )*/
-      )
-    );
+      <Upload/>,
+      <Download/>
+    )
 }
 
 
